@@ -19,7 +19,7 @@ class ChartPage(ctk.CTkFrame):
         self.username = username
         self.theme = theme
         self.dark = dark
-        self.card_bg = "#0f2044" if dark else "#ffffff"   # ← Добавила сюда
+        self.card_bg = "#0f2044" if dark else "#ffffff"  
         self.build_ui()
 
     def build_ui(self):
@@ -118,7 +118,7 @@ class ChartPage(ctk.CTkFrame):
             )
             start += extent
 
-        # Donut hole
+        
         ir = 58
         self.canvas.create_oval(cx - ir, cy - ir, cx + ir, cy + ir,
                                 fill=self.card_bg, outline="")
